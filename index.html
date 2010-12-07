@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+  <title>Client side validation</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Client side validation</h1>
+    <form action="" class="validate">
+      <fieldset>
+        <legend>Required</legend>
+        <div class="input text required">
+          <label for="required-text">Required text</label>
+          <input type="text" name="required-text" id="required-text" value="" tabindex="10" />
+        </div>
+
+        <div class="input select">
+          <label for="required-select">Select something</label>
+          <select name="required-select" id="required-select" tabindex="20">
+            <option value="">--- Please select ---</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Specific formats</legend>
+
+        <div class="input text">
+          <label for="numeric-only">Numeric only</label>
+          <input type="text" name="numeric-only" id="numeric-only" value="" tabindex="30" />
+        </div>
+        <div class="input text required">
+          <label for="email-address">Email address</label>
+          <input type="text" name="email-address" id="email-address" value="" tabindex="40" />
+        </div>
+        <div class="input text">
+          <label for="date-ddmmyy">Date (dd/mm/yy)</label>
+          <input type="text" name="date-ddmmyy" id="date-ddmmyy" value="" tabindex="45" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Length - (min / max)</legend>
+
+        <div class="input text">
+          <label for="min-max-length">Between 4 &amp; 10 characters</label>
+          <input type="text" name="min-max-length" id="min-max-length" value="" tabindex="50" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Number of items</legend>
+        <div class="input radio">
+          <p class="label">Select one</p>
+          <ul class="radio-group">
+            <li><input type="radio" name="select-one" value="1" id="select-one-one" tabindex="60" /><label for="select-one-one">One</label></li>
+            <li><input type="radio" name="select-one" value="1" id="select-one-two" tabindex="70" /><label for="select-one-two">Two</label></li>
+            <li><input type="radio" name="select-one" value="1" id="select-one-three" tabindex="80" /><label for="select-one-three">Three</label></li>
+            <li><input type="radio" name="select-one" value="1" id="select-one-four" tabindex="90" /><label for="select-one-four">Four</label></li>
+          </ul>
+        </div>
+
+        <div class="input checkbox">
+          <p class="label">Select 3</p>
+          <ul class="checkbox-group">
+            <li><input type="checkbox" name="select-three" value="one" id="select-three-one" tabindex="100" /><label for="select-three-one">One</label></li>
+            <li><input type="checkbox" name="select-three" value="two" id="select-three-two" tabindex="110" /><label for="select-three-two">Two</label></li>
+            <li><input type="checkbox" name="select-three" value="three" id="select-three-three" tabindex="120" /><label for="select-three-three">Three</label></li>
+            <li><input type="checkbox" name="select-three" value="four" id="select-three-four" tabindex="130" /><label for="select-three-four">Four</label></li>
+            <li><input type="checkbox" name="select-three" value="five" id="select-three-five" tabindex="140" /><label for="select-three-five">Five</label></li>
+            <li><input type="checkbox" name="select-three" value="six" id="select-three-six" tabindex="150" /><label for="select-three-six">Six</label></li>
+            <li><input type="checkbox" name="select-three" value="seven" id="select-three-seven" tabindex="160" /><label for="select-three-seven">Seven</label></li>
+            <li><input type="checkbox" name="select-three" value="eight" id="select-three-eight" tabindex="170" /><label for="select-three-eight">Eight</label></li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Matches</legend>
+        <div class="input password required">
+          <label for="password1">Password</label>
+          <input type="password" name="password1" id="password1" value="" tabindex="180" />
+        </div>
+        <div class="input password required">
+          <label for="password2">Confirm password (must match above)</label>
+          <input type="password" name="password2" id="password2" value="" tabindex="190" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Custom rules</legend>
+        <div class="input text required">
+          <label for="credit-card">Credit card number</label>
+          <input type="text" name="credit-card" id="credit-card" value="" tabindex="200" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Submit</legend>
+        <div class="input checkbox required">
+          <ul class="checkbox-group">
+            <li><input type="checkbox" name="required-checkbox" id="required-checkbox" value="1" tabindex="210" /><label for="required-checkbox">Required checkbox</label></li>
+          </ul>
+        </div>
+        <div class="input submit">
+          <input type="submit" value="Submit" name="submit" id="submit" tabindex="220" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <script type="text/javascript" charset="utf-8" src="/js/prototype_1.6.1.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/js/validate.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/js/application.js"></script>
+</body>
+</html>

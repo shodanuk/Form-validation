@@ -1,0 +1,86 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 62.5%;
+}
+
+p, label {
+  font-size: 1.2em;
+}
+
+legend {
+  font-size: 1.4em;
+}
+
+h1, h2, h3, h4, h5 {
+  border-bottom: 1px solid #ccc;
+  font-family: Georgia;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em
+}
+
+h3 {
+  font-size: 2em;
+}
+
+#wrapper {
+  background-color: #efefef;
+  border: 1px solid #ddd;
+  margin: 50px auto;
+  padding: 20px;
+  width: 920px;
+
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -html-border-radius: 10px;
+  -khtml-border-radius: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding-left: 220px;
+}
+
+form label, form p.label {
+  margin-left: -220px;
+  width: 200px;
+}
+
+.input input,
+.select select {
+  font-size: 1.2em;
+  padding: 10px;
+
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -html-border-radius: 10px;
+  -khtml-border-radius: 10px;
+}
+
+legend {
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.error-msg {
+  color: red;
+  font-size: 1.2em;
+  font-weight: bold;
+}

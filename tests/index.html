@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-cockney">
+<head>
+  <meta charset="UTF-8">
+  <title>Testing validation</title>
+</head>
+<body>
+  <h1>Nothing to see here... move along</h1>
+
+  <div id="formContainer">
+    <form action="">
+      <fieldset>
+        <legend>Text</legend>
+        <div class="input text">
+          <label for="textTest">Test text</label>
+          <input type="text" value="" name="textTest" id="textTest" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Password</legend>
+        <div class="input password">
+          <label for="passwordTest">Password 1</label>
+          <input type="password" value="" name="passwordTest" id="passwordTest" />
+        </div>
+        <div class="input password">
+          <label for="passwordTest2">Password 2</label>
+          <input type="password" value="" name="passwordTest2" id="passwordTest2" />
+        </div>
+      </fieldset>
+      <div class="input submit">
+        <input type="submit" name="submit" value="submit" id="submit" />
+      </div>
+    </form>
+  </div>
+
+  <script type="text/javascript" charset="utf-8" src="/js/prototype_1.6.1.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/js/validate.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/js/evidence.js"></script>
+  <script type="text/javascript" charset="utf-8" src="tests.js"></script>
+</body>
+</html>
